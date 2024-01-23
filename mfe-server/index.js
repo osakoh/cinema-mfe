@@ -6,7 +6,7 @@ const cors = require("cors");
 const App = Express();
 
 App.use(cors());
-App.use(Express.static('public'))
+App.use(Express.static("public"));
 
 App.get("/movies", (req, res) => {
   res.send(moviesData);
@@ -21,7 +21,10 @@ App.get("/movies/:id", (req, res) => {
         root: path.join(__dirname, "assets/images/"),
       };
 
-      console.log(options.root+movie.imageUrl);
+      console.log(
+        "options.root + movie.imageUrl: ",
+        options.root + movie.imageUrl
+      );
 
       res.sendFile(movie.imageUrl, options, (err) => {
         if (err) {
@@ -32,9 +35,10 @@ App.get("/movies/:id", (req, res) => {
       });
     }
   });
-  
 });
 
 App.listen(5555, () => {
-  console.log("Application started on port 5555");
+  console.log(
+    "\n ******************** Application started on port 5555 ******************** \n"
+  );
 });
