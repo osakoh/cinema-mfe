@@ -24,13 +24,6 @@ Before diving in, ensure you have Node.js and npm installed on your machine. If 
 
 1. **Clone the Repository**:  
    Grab a copy of this project onto your local machine using:
-   ```bash
-   git clone [repository-url]
-   ```
-   Don't forget to replace `[repository-url]` with the actual URL of this repository. Then, move into the project directory:
-   ```bash
-   cd [repository-name]
-   ```
 
 2. **Setting Up the MFEs**:  
    Each MFE comes with its own set of dependencies. We've included an easy-to-use script to get everything set up:
